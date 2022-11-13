@@ -1,0 +1,85 @@
+<div class="header">
+
+	<div class="container" style="
+	display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;">
+		<div class="location" >
+			<fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+			<p style="margin: 0;">Treasure Valley</p>
+		</div>
+
+		<div class="location">
+			<fa-icon [icon]="faInstagram"></fa-icon>
+			<fa-icon [icon]="faFacebook"></fa-icon>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="background-info">
+
+	<div class="container" style="
+	display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;">
+		<div class="location">
+			<img style="width: 100px;" src="../../assets/pic.png" [alt]="'logo'">
+		</div>
+
+		<div class="location">
+
+			<div class="contact">
+
+				<div class="phone">
+					<p style="margin:0px;">Call Us</p>
+					<a class="phone-number" href="tel:+2083183228">208-XXX-XXXX</a>
+				</div>
+
+				<div class="phone">
+					<p style="margin:0px;">Email Us</p>
+					<a class="email" href="mailto: abc@example.com">company@gmail.com</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<div class="navbar">
+
+	<div class="container" style="
+	display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;">
+
+
+			<div class="links">
+				<li>Home</li>
+				<li>Services</li>
+				<li>Contact</li>
+			</div>
+			<div class="menu" (click)="onMenu()">
+				<button class="mybutton" *ngIf="isOpen==false">&#9776;</button>
+				<button class="mybutton" *ngIf="isOpen==true">&#10006;</button>
+			</div>
+
+			<div class="dropdown" *ngIf="isOpen==true">
+				<ul>
+					<li>Home</li>
+					<li>Services</li>
+					<li>Contact</li>	
+				</ul>
+			</div>
+
+		</div>
+		</div>
